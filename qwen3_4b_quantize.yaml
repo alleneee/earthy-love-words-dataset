@@ -1,0 +1,11 @@
+model_name_or_path: Qwen/Qwen3-4B
+adapter_name_or_path: saves/qwen3-4b/lora/sft
+template: qwen3
+finetuning_type: lora
+
+export_dir: models/qwen3-4b-love-words
+export_size: 2
+export_device: cpu
+export_quantization_bit: 4
+export_quantization_dataset: data/c4_demo.json
+export_legacy_format: false
